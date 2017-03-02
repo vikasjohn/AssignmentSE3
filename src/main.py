@@ -3,6 +3,8 @@ Created on 28 Feb 2017
 
 @author: vikas
 '''
+
+
 import numpy as np
 import argparse
 import urllib.request
@@ -11,6 +13,32 @@ import os
 
 print(os.path.exists('input_assign3.txt'))
 
+'''
+def read_uri(fname):
+    #Read in a website
+    if fname.startswith('http'):
+        return buffer(fname)
+    else:
+        #Read in a file on the instance
+        return open(fname).read()
+    
+def buffer(filename):
+    #Buffer the website for reading
+    uri = filename
+    req = urllib.request.urlopen(uri)
+    buffer = req.read().decode('utf-8')
+    return buffer
+
+def parse():
+    #Parse in an input command for the CLI
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--input', help='input help')
+    args = parser.parse_args()
+    
+    filename = args.input
+    return filename
+
+'''
 #to turn the light on
 def turn_on(x1,y1,x2,y2,ledGrid):
     """ This function checks the given block of light are turned on (true) """
