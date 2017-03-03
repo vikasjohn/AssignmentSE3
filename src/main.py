@@ -8,6 +8,7 @@ import urllib.request
 import os.path
 import numpy as np
 import time
+import argparse
 
 
 
@@ -41,9 +42,14 @@ def switch(x1,y1,x2,y2,ledGrid):
 
         
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--input', help='input help')
+    args = parser.parse_args()
+
+    filename = args.input
     
-    uri = "http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3.txt"
-    req = urllib.request.urlopen(uri)
+    #uri = "http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3.txt"
+    req = urllib.request.urlopen(filename)
 
     buffer = req.read().decode('utf-8')
 
