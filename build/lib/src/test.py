@@ -10,23 +10,7 @@ from src.main import *
    
 '''
     
-import unittest
-from src.main import LightsOn
-
-
-class Test(unittest.TestCase):
     
-    def test_count(self):
-        self.assertEqual(LightsOn([[True, True, True], [True, True, True], [True, True, True]]), 9)
-        
-        
-   
-        
-        
- 
-if __name__ == "__main__":
-   
-    unittest.main() 
     
     
     

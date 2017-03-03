@@ -42,7 +42,6 @@ def switch(x1,y1,x2,y2,ledGrid):
 
         
 def main():
-    print("Working...")
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', help='input help')
     args = parser.parse_args()

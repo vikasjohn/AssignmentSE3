@@ -1,0 +1,13 @@
+Assignment 3 Software Engineering
+
+Step 1 is to create a grid on the number given in the file. I Have take the first file and it has 1000. I am Keeping it as L.
+Step 2: To create the grid of the number.
+Step 3: create the 3 function, light_on, light_off and switch.
+Step 4: The light_on function will turn into true for the given coordinates.
+Step 5: The light_off function will turn into false for the given coordinates.
+Step 6: The switch function will turn the light opposite from on to off and vice-versa.
+Step 7: I ran the file and it gave me the result : 400410. 
+Step 8: TO run it from command line I used argparse
+Step 9: corrected the setup file
+Step 10: installed the file on commandline.
+	
