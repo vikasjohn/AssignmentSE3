@@ -18,5 +18,6 @@ setup(name="ledtester",
         },
       install_requires=[
           'numpy',
+          'argparse'
       ],
       )
