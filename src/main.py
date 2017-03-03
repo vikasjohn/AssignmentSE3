@@ -5,7 +5,7 @@ Created on 28 Feb 2017
 '''
 
 import urllib.request
-import os.path
+
 import numpy as np
 import time
 import argparse
@@ -58,7 +58,7 @@ def main():
     start_time = time.time()
     first_line = buffer.split("\n")[0]
     L = int(first_line) # to get the value of L as integers
-    grid = [[False] * L for i in range(L)]
+    grid = [[False] * L for _ in range(L)]# no value
     ledGrid = np.array(grid) # to create the grid as in matrix form.
         #for i, line in enumerate(f), run the loop to read the lines
     for line in buffer.split('\n'):

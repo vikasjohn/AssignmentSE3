@@ -1,0 +1,3 @@
+[console_scripts]
+ledtester = src.main:main
+
